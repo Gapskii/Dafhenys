@@ -23,17 +23,6 @@ img {
   --header-height: 4.5rem;
 
   /* colors */
-  /* --base-color: #b08351;
-  --base-color-second: #ccac83;
-  --base-color-alt: #654c2b;
-  --base-color-third: #dad9da;
-  --logo-color: #b08351;
-  --text-color-dark: #211915;
-  --text-color: #654c2b;
-  --text-color-light: #ccac83;
-  --text-color-lightest: #dad9da;
-  --body-color: #211915; //branco ou proximo */
-
   --base-color: #BF7E45;
   --base-color-second: #D9B19A;
   --base-color-alt: #8C442A;
@@ -44,18 +33,6 @@ img {
   --text-color: #A65F37;
   --text-color-light: #D9B19A;
   --body-color: white;
-
-  /* --base-color: #5D3B8C;
-  --base-color-second: #8A52D9;
-  --base-color-alt: #93A64E;
-  --base-color-third: #5D3B8C;
-  --logo-color: #4F3673;
-  --text-color-dark: #4F3673;
-  --text-color: #5D3B8C;
-  --text-color-light: #8A52D9;
-  --text-color-lightest: #5D3B8C;
-  --body-color: #F2F2F2; //branco ou proximo */
-
 
   /* fonts */
   --logo-font-size: 1.75rem;
@@ -105,12 +82,12 @@ body {
 
 .divider-1 {
   height: 2px;
-  background: linear-gradient(270deg, #654c2b, #dad9da);
+  background: linear-gradient(270deg, #26150F, #D9B19A);
 }
 
 .divider-2 {
   height: 2px;
-  background: linear-gradient(270deg, #dad9da, #654c2b);
+  background: linear-gradient(270deg, #D9B19A, #26150F);
 }
 
 /*==== LAYOUT ============*/
@@ -379,7 +356,7 @@ nav.show div.icon-close {
   margin-right: 1.5rem;
 }
 
-/*==== SERVICES ============*/
+/*==== CLASSES ============*/
 .cards.grid {
   gap: 1.5rem;
 }
@@ -397,6 +374,11 @@ nav.show div.icon-close {
   margin-bottom: 0.5rem;
   font-size: 5rem;
   color: var(--base-color);
+}
+
+.card img {
+  width: 5rem;
+  margin-bottom: 0.5rem;
 }
 
 .card .title {
@@ -461,12 +443,6 @@ nav.show div.icon-close {
 .swiper-slide {
   height: auto;
   padding: 4rem 1rem;
-}
-
-div.swiper-button-prev,
-div.swiper-button-next {
-  color: var(--base-color-second);
-  opacity: 0.3;
 }
 
 span.swiper-pagination-bullet {
@@ -561,6 +537,12 @@ footer {
   background: var(--base-color-second);
 }
 
+footer .container {
+  grid-auto-flow: column;
+  align-items: center;
+  justify-items: space-between;
+}
+
 footer .logo {
   display: inline-block;
   color: var(--logo-color);
@@ -605,10 +587,10 @@ footer i {
 footer .social {
   grid-auto-flow: column;
   width: fit-content;
+  margin-left: auto;
 }
 
 footer .social a {
-  margin-right: 2rem;
   transition: 0.3s;
   display: inline-block;
 }
@@ -734,7 +716,7 @@ footer .social a:hover {
     margin-left: auto;
   }
 
-  /* Services */
+  /* Classes */
 
   .card {
     padding-left: 1.25rem;
@@ -779,14 +761,8 @@ footer .social a:hover {
     padding: 3.75rem 0;
   }
 
-  footer .container {
-    grid-auto-flow: column;
-    align-items: center;
-    justify-items: space-between;
-  }
-
   footer .social {
-    margin-left: auto;
+    margin-right: auto;
   }
 }
 /* large devices: 992 > */
@@ -893,7 +869,7 @@ footer .social a:hover {
     margin-left: auto;
   }
 
-  /* Services */
+  /* Classes */
   .card {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -935,16 +911,6 @@ footer .social a:hover {
   /* Footer */
   footer.section {
     padding: 3.75rem 0;
-  }
-
-  footer .container {
-    grid-auto-flow: column;
-    align-items: center;
-    justify-items: space-between;
-  }
-
-  footer .social {
-    margin-left: auto;
   }
 }
 
@@ -1012,25 +978,6 @@ footer .social a:hover {
 
   nav .icon-menu {
     display: none;
-  }
-
-  #header.scroll a.title {
-    color: var(--text-color-light);
-    transition: 0.3s;
-  }
-
-  #header.scroll .menu ul li a {
-    color: var(--text-color-light);
-    transition: 0.3s;
-  }
-
-  #header.scroll nav ul li a::after {
-    background: var(--text-color-light);
-  }
-
-  #header.scroll nav ul li a:hover::after,
-  nav ul li a.active::after {
-    background-color: var(--text-color-);
   }
 
   /* Home */
@@ -1116,15 +1063,6 @@ footer .social a:hover {
   /* Footer */
   footer.section {
     padding: 3.75rem 0;
-  }
-
-  footer .container {
-    grid-auto-flow: column;
-    align-items: center;
-  }
-
-  footer .social {
-    margin-left: auto;
   }
 
   footer .logo {
