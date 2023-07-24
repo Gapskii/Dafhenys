@@ -456,19 +456,19 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
 }
 
 /*==== INFOS ============*/
-#infos {
+#informations {
   overflow: hidden;
 }
 
-#infos .container {
+#informations .container {
   margin: 0;
 }
 
-#infos .image {
+#informations .image {
   position: relative;
 }
 
-#infos .image::before {
+#informations .image::before {
   content: '';
   height: 100%;
   width: 95%;
@@ -479,21 +479,25 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   z-index: 0;
 }
 
-#infos .image img {
+#informations .image img {
   margin-right: 0rem;
   position: relative;
   width: 90%;
 }
 
-#infos .image img,
-#infos .image::before {
+#informations .image img,
+#informations .image::before {
   border-radius: 0.25rem;
 }
 
-#infos .text {
+#informations .text {
   margin-top: 2rem;
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+}
+
+#informations .text h3 {
+  color: var(--text-color-darkest)
 }
 
 /*==== CONTACT ============*/
@@ -728,18 +732,18 @@ footer .social a:hover {
   }
 
   /* Faq */
-  #infos .container {
+  #informations .container {
     margin: 0 auto;
   }
 
-  #infos .image img {
+  #informations .image img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
   }
 
-  #infos .image::before {
+  #informations .image::before {
     height: 100%;
     width: 60%;
     top: 12%;
@@ -880,17 +884,22 @@ footer .social a:hover {
   }
 
   /* Faq */
-  #infos .container {
+  #informations .text {
+    width: 520px;
+    margin-right: 0
+  }
+
+  #informations .container {
     margin: 0 auto;
     grid-auto-flow: column;
     align-items: center;
   }
 
-  #infos .image {
+  #informations .image {
     order: 1;
   }
 
-  #infos .image::before {
+  #informations .image::before {
     height: 100%;
     width: 90%;
     top: 12%;
@@ -1028,17 +1037,17 @@ footer .social a:hover {
   }
 
   /* Faq */
-  #infos .container {
+  #informations .container {
     margin: 0 auto;
     grid-auto-flow: column;
     align-items: center;
   }
 
-  #infos .image {
+  #informations .image {
     order: 1;
   }
 
-  #infos .image::before {
+  #informations .image::before {
     height: 100%;
     width: 90%;
     top: 12%;
